@@ -12,6 +12,13 @@ h3{
 
 
 
+.x{
+    height: 600px;
+    position: relative;
+    margin-top: 50px;
+    
+}
+
 .logo{
     
     position: absolute;
@@ -26,8 +33,30 @@ h3{
     
 }
 
+
 .x{
     height: 450px;
     position: relative;
     margin-top: 50px;
 }
+
+
+
+.text{
+    position: absolute;
+    left: 700px;
+    top: 235px;
+
+}
+p{
+    position: absolute;
+    left: 70px;
+    top: 440px;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    width: 1152px;
+}
+

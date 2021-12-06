@@ -1,20 +1,16 @@
-
-
+body{
+    width: 1152px;
+}
 .d{
     display: flex;
-
     margin-left: 830px;
-    
 }
 
 h3{
     margin-left: 10px;
 }
 
-body{
 
-    width: 1152px;
-}
 
 .logo{
     
@@ -34,5 +30,4 @@ body{
     height: 450px;
     position: relative;
     margin-top: 50px;
-    ma
 }

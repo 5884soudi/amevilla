@@ -16,6 +16,13 @@ body{
     width: 1152px;
 }
 
+.x{
+    height: 600px;
+    position: relative;
+    margin-top: 50px;
+    
+}
+
 .logo{
     
     position: absolute;
@@ -30,9 +37,41 @@ body{
     
 }
 
-.x{
-    height: 450px;
-    position: relative;
-    margin-top: 50px;
-    ma
+
+
+.text{
+    position: absolute;
+    left: 700px;
+    top: 235px;
+
 }
+p{
+    position: absolute;
+    left: 70px;
+    top: 440px;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    width: 1152px;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

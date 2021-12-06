@@ -10,3 +10,29 @@
 h3{
     margin-left: 10px;
 }
+
+body{
+
+    width: 1152px;
+}
+
+.logo{
+    
+    position: absolute;
+    top: -110px;
+    left: 60px;
+}
+
+.backimg{
+    margin: auto;
+    width: auto;
+    margin-left: 110px;
+    
+}
+
+.x{
+    height: 450px;
+    position: relative;
+    margin-top: 50px;
+    ma
+}

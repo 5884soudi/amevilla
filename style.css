@@ -1,7 +1,7 @@
 body{
     width: 1152px;
 }
-.header_right{
+.d{
     display: flex;
     margin-left: 830px;
 }
@@ -12,7 +12,7 @@ h3{
 
 
 
-.container{
+.x{
     height: 600px;
     position: relative;
     margin-top: 50px;
@@ -59,4 +59,8 @@ footer{
     height: 100px;
     width: 1152px;
 }
+
+
+ 
+
 

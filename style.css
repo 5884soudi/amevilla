@@ -62,7 +62,11 @@ opacity: 0;
     top: 600px;
     left: 0;
     font-size: 25px;
+
+
 }
+
+
 
 
 
@@ -154,20 +158,20 @@ footer p {
 
  .visual{
     
-opacity: 0;
+display: none;
 
 
 
  }
 
  .text-img{
-     opacity: 0;
+    display: none;
  }
 
  
 
  .header-right{
-    opacity: 0;
+    display: none;
 
  }
 
@@ -206,7 +210,7 @@ main{
 }
 
 .b{
-  opacity: 0;;
+  opacity: 0;
 }
  
 }

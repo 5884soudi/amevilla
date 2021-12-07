@@ -1,4 +1,7 @@
 html, body {
+
+
+
     max-width: 1152px;
     height: auto;
     margin: 0 auto;
@@ -51,6 +54,9 @@ header {
     right: 7px;
 }
 
+.sp{
+opacity: 0;
+}
 .subtitle {
     position: absolute;
     top: 600px;
@@ -58,8 +64,12 @@ header {
     font-size: 25px;
 }
 
+
+
+
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 main {
+    margin-top: 200px;
     height: auto;
 }
 
@@ -131,4 +141,72 @@ footer {
 
 footer p {
     color: white;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+
+ .logo{
+     left: 280px;
+ }
+
+ .visual{
+    
+opacity: 0;
+
+
+
+ }
+
+ .text-img{
+     opacity: 0;
+ }
+
+ 
+
+ .header-right{
+    opacity: 0;
+
+ }
+
+.sp{
+    
+    margin-top: -300px;
+
+    opacity: 1;
+
+    
+
+}
+
+main{
+
+    margin-top: 500px;
+}
+
+
+
+.sp-text{
+    height: 500px;
+    width: 767px;
+
+    margin-top: -530px;
+    margin-left: 50px;
+}
+
+
+
+.a{
+    margin-top: 30px;
+
+    line-height: 1.5;
+    text-align: center;
+}
+
+.b{
+  opacity: 0;;
+}
+ 
 }

@@ -54,9 +54,10 @@ header {
     right: 7px;
 }
 
-.sp{
-opacity: 0;
+.sp {
+    opacity: 0;
 }
+
 .subtitle {
     position: absolute;
     top: 600px;
@@ -123,14 +124,52 @@ h1 {
     font-size: 13px;
 }
 
-.btn_box span {
+/* ーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* .btn_box span {
     display: inline-block;
     width: 20px;
     height: 20px;
     border-bottom: solid 2px black;
+} */
+
+.border {
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    /* letter-spacing: 3px; */
+    /* background: skyblue; */
+    position: relative;
+}
+
+/* アンダーラインを表現する疑似要素*/
+.border::after {
+    content: '';
+    display: block;
+    /* 初期状態でのwidthは0 */
+    width: 10px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -10px;
+    /* rightを0にすると線は右から左に伸びる  */
+    right: 0;
+    /* ゆっくり線がのびるようにする   */
+    transition: .5s;
+}
+
+/* マウスカーソルが乗っかるとwidthが100%に伸びる */
+.border:hover::after {
+    width: 100%;
 }
 
 
+
+
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 footer {
     height: 130px;
     background-color: black;
@@ -146,67 +185,68 @@ footer p {
 
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 
- .logo{
-     left: 280px;
- }
+    .logo {
+        left: 280px;
+    }
 
- .visual{
-    
-opacity: 0;
+    .visual {
 
-
-
- }
-
- .text-img{
-     opacity: 0;
- }
-
- 
-
- .header-right{
-    opacity: 0;
-
- }
-
-.sp{
-    
-    margin-top: -300px;
-
-    opacity: 1;
-
-    
-
-}
-
-main{
-
-    margin-top: 500px;
-}
+        opacity: 0;
 
 
 
-.sp-text{
-    height: 500px;
-    width: 767px;
+    }
 
-    margin-top: -530px;
-    margin-left: 50px;
-}
+    .text-img {
+        opacity: 0;
+    }
 
 
 
-.a{
-    margin-top: 30px;
+    .header-right {
+        opacity: 0;
 
-    line-height: 1.5;
-    text-align: center;
-}
+    }
 
-.b{
-  opacity: 0;;
-}
- 
+    .sp {
+
+        margin-top: -300px;
+
+        opacity: 1;
+
+
+
+    }
+
+    main {
+
+        margin-top: 500px;
+    }
+
+
+
+    .sp-text {
+        height: 500px;
+        width: 767px;
+
+        margin-top: -530px;
+        margin-left: 50px;
+    }
+
+
+
+    .a {
+        margin-top: 30px;
+
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .b {
+        opacity: 0;
+        ;
+    }
+
 }

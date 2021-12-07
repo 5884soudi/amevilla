@@ -64,3 +64,37 @@ footer{
  
 
  
+ @media screen and (max-width: 767px) {
+
+    
+    
+.x{
+    height: 450px;
+    position: relative;
+    margin-top: 50px;
+}
+   
+    .logo{
+    
+        position: absolute;
+        top: -110px;
+        right: 365px;
+    }
+    
+
+        .backimg{
+            margin: auto;
+            width: auto;
+            margin-left: 110px;
+            
+        }
+        
+        p{
+            position: absolute;
+            left: 70px;
+            top: 440px;
+        }
+
+    
+    
+ }

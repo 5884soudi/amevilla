@@ -1,66 +1,129 @@
-body{
-    width: 1152px;
-}
-.d{
-    display: flex;
-    margin-left: 830px;
-}
-
-h3{
-    margin-left: 10px;
+html, body {
+    max-width: 1152px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-
-
-.x{
-    height: 600px;
-    position: relative;
-    margin-top: 50px;
-    
+header {
+    height: 90vh;
 }
 
-.logo{
-    
+.header-menu {
     position: absolute;
-    top: -110px;
+    top: 80px;
+    right: 130px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: end;
+}
+
+.header-right li {
+    margin-left: 20px;
+}
+
+.mainVisual {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.visual {
+    position: absolute;
+    top: 121px;
     left: 60px;
 }
 
-.backimg{
-    margin: auto;
-    width: auto;
-    margin-left: 110px;
-    
+.text-img {
+    position: absolute;
+    top: 355px;
+    right: 7px;
 }
 
+.subtitle {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    font-size: 25px;
+}
 
-.x{
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+main {
+    height: auto;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.thumbnail {
+    width: 350px;
+    height: auto;
+}
+
+.box {
+    width: 350px;
     height: 450px;
     position: relative;
-    margin-top: 50px;
 }
 
+.dates, .text {
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 10px;
+    margin-top: 10px;
+}
 
-
-.text{
+.btn_box {
+    display: inline-block;
     position: absolute;
-    left: 700px;
-    top: 235px;
-
+    top: 400px;
+    right: 30px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
-p{
-    position: absolute;
-    left: 70px;
-    top: 440px;
+
+.btn_box p {
+    font-size: 13px;
 }
 
-footer{
+.btn_box span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px black;
+}
+
+footer {
+    height: 130px;
     background-color: black;
-    height: 100px;
-    width: 1152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
- 
 
- 
-
- 
+footer p {
+    color: white;
+}

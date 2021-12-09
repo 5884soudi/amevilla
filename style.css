@@ -191,9 +191,72 @@ footer p {
 
 @media screen and (max-width: 767px) {
 
+
+
+
+.body{
+position: relative;
+}
+
+    .humberger{
+        height: 24px;
+        width: 40px;
+        position: absolute;
+        right: 50px;
+    }
+
+    .one
+    {
+        height: 3px;
+        width:40px;
+        background-color: black;
+        border-radius: 100px;
+    }
+
+    .two{
+        height: 3px;
+        width: 40px;
+        background-color: black;
+        border-radius: 100px;
+        margin-top: 5px;
+
+
+    }
+
+    .three{
+
+        height: 3px;
+        width: 40px;
+        background-color: black;
+        border-radius: 100px;
+        margin-top: 5px;
+    }
+
+    .add1{
+        transform: rotate(45deg);
+
+        
+    }
+
+    .add2{
+        opacity: 0;
+    }
+
+    .add3{
+
+        transform: rotate(135deg);
+        margin-top: -10px;
+
+    }
+
+
     .logo {
         left: 280px;
     }
+
+    
+
+   
 
  .visual{
     
@@ -202,19 +265,41 @@ footer p {
  }
 
 
+ .zero{
+     opacity: 0;
+ }
 
+.screen{
+    opacity: 1;
+}
 
  .text-img{
     display: none;
  }
 
  .header-right{
-    display: none;
+    flex-direction: column;
+
+    font-size: 35px;
+
+    position: absolute;
+
+    right: 150px;
+    top: 240px;
+
+    opacity: 0;
+
+    
+    
+ }
+
+ li{
+     margin-top: 30px;
  }
 
     .sp {
 
-        margin-top: -300px;
+        margin-top: -520px;
 
         opacity: 1;
 

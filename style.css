@@ -1,12 +1,13 @@
-body {
-    padding-top: 10px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-}
-.all{
+html, body {
+
+
+
     max-width: 1152px;
     height: auto;
     margin: 0 auto;
-    
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 header {
@@ -54,7 +55,7 @@ header {
 }
 
 .sp {
-    display: none;
+    opacity: 0;
 }
 
 .subtitle {
@@ -67,9 +68,13 @@ header {
 }
 
 
+
+
+
+
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 main {
-    margin-top: 100px;
+    margin-top: 200px;
     height: auto;
 }
 
@@ -183,32 +188,118 @@ footer p {
 
 
 
+
 @media screen and (max-width: 767px) {
+
+
+
+
+.body{
+position: relative;
+}
+
+    .humberger{
+        height: 24px;
+        width: 40px;
+        position: absolute;
+        right: 50px;
+    }
+
+    .one
+    {
+        height: 3px;
+        width:40px;
+        background-color: black;
+        border-radius: 100px;
+    }
+
+    .two{
+        height: 3px;
+        width: 40px;
+        background-color: black;
+        border-radius: 100px;
+        margin-top: 5px;
+
+
+    }
+
+    .three{
+
+        height: 3px;
+        width: 40px;
+        background-color: black;
+        border-radius: 100px;
+        margin-top: 5px;
+    }
+
+    .add1{
+        transform: rotate(45deg);
+
+        
+    }
+
+    .add2{
+        opacity: 0;
+    }
+
+    .add3{
+
+        transform: rotate(135deg);
+        margin-top: -10px;
+
+    }
+
 
     .logo {
         left: 280px;
     }
 
-    .visual {
+    
 
-        display: none;
+   
 
-    }
+ .visual{
+    
+    display: none;
+
+ }
 
 
+ .zero{
+     opacity: 0;
+ }
 
+.screen{
+    opacity: 1;
+}
 
-    .text-img {
-        display: none;
-    }
+ .text-img{
+    display: none;
+ }
 
-    .header-right {
-        display: none;
-    }
+ .header-right{
+    flex-direction: column;
+
+    font-size: 35px;
+
+    position: absolute;
+
+    right: 150px;
+    top: 240px;
+
+    opacity: 0;
+
+    
+    
+ }
+
+ li{
+     margin-top: 30px;
+ }
 
     .sp {
 
-        margin-top: -300px;
+        margin-top: -520px;
 
         opacity: 1;
 
@@ -246,8 +337,8 @@ footer p {
     }
 
 
-    .b {
-        opacity: 0;
+    .b{
+    opacity: 0;
     }
 
 }

@@ -1,12 +1,12 @@
 body {
-    
+    padding-top: 10px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 .all{
     max-width: 1152px;
     height: auto;
     margin: 0 auto;
-    padding-top: 10px;
+    
 }
 
 header {
@@ -67,13 +67,9 @@ header {
 }
 
 
-
-
-
-
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 main {
-    margin-top: 200px;
+    margin-top: 100px;
     height: auto;
 }
 

@@ -1,0 +1,365 @@
+body {
+    padding-top: 10px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.all {
+    max-width: 1152px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    height: auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+.header-right {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+.sp-menu {
+    display: none;
+}
+
+.header-right li {
+    margin-left: 20px;
+}
+
+.mainVisual {
+    width: 100%;
+    height: 90vh;
+    /* position: relative; */
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+}
+
+.visual {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+
+.sp-visual {
+    display: none;
+}
+
+.text-img {
+    position: absolute;
+    top: 385px;
+    right: 7px;
+}
+
+.sp {
+    display: none;
+}
+
+.subtitle {
+    position: absolute;
+    top: 620px;
+    left: 0;
+    font-size: 25px;
+}
+
+.sp-subtitle {
+    display: none;
+}
+
+/* ーーー ここからmain ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+main {
+    margin-top: 22px;
+    height: auto;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.thumbnail {
+    width: 350px;
+    height: auto;
+}
+
+.box:hover {
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    margin-bottom: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+.dates, .text {
+    font-size: 18px;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.btn_box {
+    display: inline-block;
+    position: absolute;
+    top: 400px;
+    right: 30px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn_box p {
+    font-size: 13px;
+}
+
+.border {
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    position: relative;
+}
+
+/* アンダーラインを表現する疑似要素*/
+.border::after {
+    content: '';
+    display: block;
+    /* 初期状態でのwidthは0 */
+    width: 10px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: -10px;
+    /* rightを0にすると線は右から左に伸びる  */
+    right: 0;
+    /* ゆっくり線がのびるようにする   */
+    transition: .5s;
+}
+
+/* マウスカーソルが乗っかるとwidthが100%に伸びる */
+.border:hover::after {
+    width: 100%;
+}
+
+/* ーーー mainここまで ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* footerーーーーーーーーー */
+footer {
+    height: 130px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}
+
+
+/* --- ここからレスポンシブ ----------------------------------------*/
+@media screen and (max-width: 767px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .mainVisual {
+        height: auto;
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .header-menu {
+        position: static;
+    }
+    .header-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        right: 50px;
+    }
+
+    .hamburger .pate,
+    .hamburger .pate::before,
+    .hamburger .pate::after {
+        width: 100%;
+        height: 2px;
+        display: block;
+        background-color: black;
+        border-radius: 2px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .hamburger .pate {
+        position: relative;
+        top: calc(50% - 2px);
+    }
+
+    .hamburger .pate::before, .hamburger .pate::after {
+        content: "";
+        position: absolute;
+    }
+
+    .hamburger .pate::before {
+        top: -9px;
+    }
+
+    .hamburger .pate::after {
+        top: 9px;
+    }
+
+    .on .pate {
+        background-color: transparent;
+    }
+
+    .on .pate::before {
+        -webkit-transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .on .pate::after {
+        -webkit-transform: rotate(-45deg) translate(7px, -8px);
+        transform: rotate(-45deg) translate(7px, -8px);
+    }
+
+    .header-right {
+        position: static;
+    }
+
+    .fadeIn {
+        background-color: white;
+        height: calc(100vh - 130px);
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 20;
+    }
+    .fadeIn li {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+
+
+    .header-items {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    .logo {
+        position: initial;
+        max-width: 100%;
+    }
+    .logo-oya {
+        width: 30%;
+    }
+
+    .visual {
+        display: none;
+    }
+
+    .sp-visual {
+        display: block;
+        /* margin-top: 30px; */
+        max-width: 100%;
+    }
+
+    .text-img {
+        display: none;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .sp-subtitle {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sp-subtitle p {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 25px;
+        line-height: 1.5;
+        font-weight: lighter;
+    }
+
+
+    .contents {
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .box {
+        /* position: initial; */
+        /* width: 500px; */
+        /* height: 500px; */
+    }
+
+    .thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .border::after {
+        width: 40%;
+    }
+
+    .section {
+        margin-top: 30px;
+    }
+
+
+}
